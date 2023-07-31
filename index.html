@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Nav Start -->
+    <nav id="nav" class="d-flex position-fixed">
+      <div
+        class="d-flex nav-left flex-column justify-content-between text-white py-3"
+      >
+        <ul
+          class="list-unstyled text-start text-capitalize ms-4 nav-links nav-anchors"
+        >
+          <li id="now-playing" class="mb-4"><a href="#">now playing</a></li>
+          <li id="popular" class="mb-4"><a href="#">popular</a></li>
+          <li id="top-rated" class="mb-4"><a href="#">top rated</a></li>
+          <li id="trending" class="mb-4"><a href="#">trending</a></li>
+          <li id="upcoming" class="mb-4"><a href="#">upcoming</a></li>
+          <li id="contact-us" class="mb-4"><a href="#contact">contact us</a></li>
+        </ul>
+        <div>
+          <ul class="list-unstyled d-flex nav-links ms-4">
+            <li class="mx-2">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="mx-2">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li class="mx-2">
+              <a href="#"><i class="fa-solid fa-globe"></i></a>
+            </li>
+          </ul>
+          <p class="text-capitalize copyright ms-4 pb-4">
+            copyright Â&copy; 2019 all rights reserved.
+          </p>
+        </div>
+      </div>
+      <div
+        class="d-flex nav-right py-3 flex-column justify-content-between text-dark bg-light vh-100 text-center"
+      >
+        <img id="logo" class="mx-auto" src="images/logo.png" alt="logo" />
+        <span class="nav-btn" id="open-btn"
+          ><i class="fa-solid fa-bars"></i
+        ></span>
+        <span class="nav-btn d-none" id="close-btn"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
+        <ul class="list-unstyled">
+          <li><i class="fa-solid fa-globe mb-3"></i></li>
+          <li><i class="fa-solid fa-share-nodes"></i></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Nav End -->
+
+    <!-- Movies Area Start -->
+    <section class="movies pt-5">
+      <div class="container">
+        <div class="search-movies row pt-3 mb-5">
+          <div class="col-md-6">
+            <input
+              type="text"
+              id="search-by-word"
+              placeholder="get movies by word..."
+            />
+          </div>
+          <div class="col-md-6">
+            <input type="text" id="search-current" placeholder="search..." />
+          </div>
+        </div>
+        <div class="movies-cards row" id="searchedMovies">
+          
+       
+        </div>
+        <div class="movies-cards row" id="movies">
+          
+       
+        </div>
+      </div>
+    </section>
+    <!-- Movies Area End -->
+
+    <!-- Contact Start -->
+    <section class="contact mb-5" id="contact">
+      <div class="container">
+        <h2 class="text-light my-5">ContactUs...</h2>
+        <div class="row mb-3">
+          <div class="col-md-6 py-3">
+            <input
+              type="text"
+              id="name-Input"
+              placeholder="Enter Your Name"
+            />
+            <div class="p-2 validation-Input d-none" id="name-validate">Your Name is not valid</div>
+          </div>
+          <div class="col-md-6 py-3">
+            <input
+              type="email"
+              id="email-Input"
+              placeholder="Enter Email"
+            />
+            <div class="p-2 validation-Input d-none" id="email-validate">enter valid email</div>
+          </div>
+          <div class="col-md-6 py-3">
+            <input
+              type="tel"
+              id="phone-Input"
+              placeholder="Enter Phone"
+            />
+            <div class="p-2 validation-Input d-none" id="phone-validate">enter valid phone</div>
+          </div>
+          <div class="col-md-6 py-3">
+            <input
+              type="text"
+              id="age-Input"
+              placeholder="Enter Age"
+            />
+            <div class="p-2 validation-Input d-none" id="age-validate">enter valid Age</div>
+          </div>
+          <div class="col-md-6 py-3">
+            <input
+              type="password"
+              id="password-Input"
+              placeholder="Enter Password"
+            />
+            <div class="p-2 validation-Input d-none" id="password-validate">enter valid password *Minimum eight characters, at least one letter and one number:*</div>
+          </div>
+          <div class="col-md-6 py-3">
+            <input
+              type="password"
+              id="repassword-Input"
+              placeholder="Enter RePassword"
+            />
+            <div class="p-2 validation-Input d-none" id="repassword-validate">enter valid Repassword</div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-outline-danger">Submit</button>
+      </div>
+    </section>
+    <!-- Contact End -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

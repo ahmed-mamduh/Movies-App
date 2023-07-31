@@ -1,0 +1,85 @@
+body{
+    background-color: #0D0D0D;
+}
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    color: white;
+    width: 100%;
+}
+input:focus{
+    color: #495057;
+}
+::placeholder{
+    text-align: center;
+}
+
+.container{
+    width: 75%;
+}
+
+/* nav start */
+#logo{
+    width: 50%;
+}
+.nav-btn{
+    font-size: 1.7rem;
+}
+#nav{
+    left: -240px;
+    z-index: 6;
+}
+#nav i{
+    cursor: pointer;
+}
+.nav-left{
+    max-width: 240px;
+    background-color: #0D0D0D;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #f9f6f6;
+    transition: 300ms all;
+}
+.nav-anchors li{
+    opacity: 0;
+    padding-top: 500px;
+}
+
+.nav-links a:hover{
+    color: #EF4620;
+}
+.copyright{
+    color: #999;
+    font-size: 15px;
+}
+/* nav end */
+
+/* movies start */
+.post img{
+    width: 100%;
+    height: 100%;
+}
+.movie{
+    overflow: hidden;
+}
+.movie .layer{
+    background-color: rgba(255,255,255,.7);
+    top: 100% !important;
+    opacity: 0;
+    transition: 1s all;
+}
+.movie:hover .layer{
+    opacity: 1;
+    top: 0 !important;
+}
+
+/* Contact start */
+.validation-Input{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb
+}
+/* Contact end */
